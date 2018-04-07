@@ -20,14 +20,14 @@ $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 TARGET_ARCH := arm64
 TARGET_DENSITY := xxhdpi
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_mido
+PRODUCT_NAME := aicp_mido
 BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := mido
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="xiaomi/mido/mido:7.0/NRD90M/V9.2.2.0.NCFMIEK:user/release-keys" \
+    BUILD_FINGERPRINT="xiaomi/mido/mido:8.1.0/OPM2.171019.029/24af14c4b4:userdebug/test-keys" \
     PRIVATE_BUILD_DESC="mido-user 7.0 NRD90M V9.2.2.0.NCFMIEK release-keys"
